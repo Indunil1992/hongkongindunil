@@ -1,0 +1,99 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "63bcdbb5-f639-4cfa-b35f-164cb9539406": {
+        "id": "63bcdbb5-f639-4cfa-b35f-164cb9539406",
+        "parent": null,
+        "name": "hongkongindunil",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "c2a583ae-cb1f-4f7a-9661-37999db8de97"
+        ],
+        "isRemovable": false,
+        "filePath": "hongkongindunil"
+      },
+      "c2a583ae-cb1f-4f7a-9661-37999db8de97": {
+        "id": "c2a583ae-cb1f-4f7a-9661-37999db8de97",
+        "parent": "63bcdbb5-f639-4cfa-b35f-164cb9539406",
+        "name": "function.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "hongkongindunil/function.js",
+        "code": "exports.handler = function(request, response) {\n    \n    response.send({\"message\": \"Successfully executed\"});\n}",
+        "config": {
+          "runtime": "nodejs8",
+          "timeout": 60,
+          "memory": 128,
+          "triggerType": 0
+        },
+        "triggers": [
+          {
+            "resourceName": "http-trigger",
+            "config": {}
+          }
+        ]
+      },
+      "cc5a11b4-512d-4343-818b-d85e0d5e4acf": {
+        "id": "cc5a11b4-512d-4343-818b-d85e0d5e4acf",
+        "parent": null,
+        "name": "index.js",
+        "type": "JS_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": false,
+        "filePath": "index.js",
+        "code": "// This file is used to register all your cloud functions in GCP.\n// DO NOT EDIT/DELETE THIS, UNLESS YOU KNOW WHAT YOU ARE DOING.\n\nexports.hongkongindunilfunction = require(\"./hongkongindunil/function.js\").handler;"
+      },
+      "b577ad0c-eede-4ce1-9025-ca7a347e7e23": {
+        "id": "b577ad0c-eede-4ce1-9025-ca7a347e7e23",
+        "parent": null,
+        "name": "main.py",
+        "type": "PYTHON_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": false,
+        "filePath": "main.py",
+        "code": "# This file is used to register all your cloud functions in GCP.\n# DO NOT EDIT/DELETE THIS, UNLESS YOU KNOW WHAT YOU ARE DOING.\n\n"
+      }
+    },
+    "rootNode": "63bcdbb5-f639-4cfa-b35f-164cb9539406",
+    "openFiles": [
+      "c2a583ae-cb1f-4f7a-9661-37999db8de97"
+    ],
+    "currentFileId": "c2a583ae-cb1f-4f7a-9661-37999db8de97",
+    "resources": {
+      "http-trigger": {
+        "name": "http-trigger",
+        "type": "http-trigger",
+        "config": {}
+      }
+    },
+    "customTemplate": {
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "hongkongindunil",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "asia-east2",
+    "platform": "GCP",
+    "platformRegions": {},
+    "lastSave": 1568786454768
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "hongkongindunil",
+      "url": "https://github.com/Indunil1992/hongkongindunil"
+    }
+  }
+}
